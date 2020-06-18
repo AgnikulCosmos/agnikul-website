@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden !important;
+    z-index: 0;
 }
 
 .navBar {
@@ -82,38 +83,117 @@ body {
     }
   }
   
-.custom-form-control {
-  margin-left: 5%;
-  margin-right: 5%;
-  border: 5px solid grey;
-  border-radius: 5px; 
+.custom-form-control,.custom-form-control-half {
+  border: 1px solid grey;
+  border-radius: 6px;
+  text-decoration: none;
+
+  color: grey;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.custom-form-control i {
-  width: 10%;
+.custom-form {
+  margin-left : 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.custom-form-control i.custom {
+  width: 5%;
   padding: 2%;
 }
 
-.custom-form-control select,input {
+.custom-form-control i.arrow {
+  padding: 2%;
+  float: right;
+}
+
+.custom-form-control i {
+  color: black;
+}
+
+.custom-form-control-half i.custom {
+  width: 10%;
+  padding: 4%;
+}
+
+.custom-form-control-half i.arrow {
+  padding: 4%;
+  float: right;
+}
+
+.custom-form-control-half i {
+  color: black;
+}
+
+
+
+.custom-form .col-sm {
+  margin-bottom: 5%; 
+  text-align: left;
+}
+
+
+
+.footer{
+  background-color: green;
+  width: 100%;
+  padding-top: 10%;
+  z-index: -10000000;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer .border-row {
+  border-bottom: 1px solid black;
+}
+
+.footer .border-column {
+  border-right: 1px solid black;
+}
+
+.footer .row {
+  padding: 2%;
+}
+
+.footer h1,h2,h3,p {
+  padding-bottom: 2%;;
+}
+
+
+.custom-form-control-half button {
   text-decoration: none;
-  padding-top: 2%;
-  padding-bottom: 2%;
   border: none;
   color: grey;
   background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.custom-form-control-half input {
+  text-decoration: none;
+  border: none;
+  color: grey;
+  background: none;
+  padding-top: 3%;
   width: 90%;
   float: right;
   text-align: left;
 }
 
-.custom-form-control option {
-  box-shadow: 0 0 10px 100px #fff inset;
+.dropdown-menu{
+  width: 90%;
 }
 
 .custom-form-control select:active,select:hover {
   outline: none;
 }
 
+.custom-form-control::after,.custom-form-control-half::after { 
+  content: none !important; 
+} 
 
 
 

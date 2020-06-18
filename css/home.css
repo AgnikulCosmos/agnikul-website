@@ -77,14 +77,52 @@
     color: white;
 }
 
-.col-sm {
-    margin-bottom: 5%;
-}
 
 .card {
     box-shadow: 5px 10px 10px grey;
     border-radius: 12px !important;
 }
+
+
+.custom-button {
+    text-decoration: none;
+    background-color: green;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    padding: 0.5%  1%;
+    box-shadow: 0 10px 36px 0 rgba(29, 113, 35, 0.2);
+}
+
+
+
+.fifth-section {
+    position: relative;
+    padding: 5%;
+    width: 70%;
+    margin-left: 0%;
+    margin-bottom: -10%;
+    box-shadow: 50px 130px 100px 0 rgba(0, 0, 0, 0.15), 0 0 12px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(200,200,200,0.5);
+    background-color: #ffffff;  
+    z-index: 10000;  
+}
+
+
+.fifth-content {
+  font-size: 60px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #586339;
+}
+
+.first-row {
+    padding-top: 10%;
+}
+
 
 @media screen and (max-width: 600px) {
   

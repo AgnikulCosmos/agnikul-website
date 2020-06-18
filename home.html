@@ -7,11 +7,13 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <script src="js/common.js"></script>
-        <script src="js/jquery-3.5.1.slim.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     <body>
+<!--       -------------------------------------------------NAVBAR--------------------------------------  -->
+
         <div class="container-fluid">
         <div class="row justify-content-center topnav" id="myTopnav">
        
@@ -61,7 +63,7 @@
           </div>
           </div>
 
-
+<!--       -------------------------------------------------HOME SECTION--------------------------------------  -->
           <div class="HomeBanner">
               <div class="banner-content">
                   <i class="fa fa-bars" style="color: white; padding-bottom:3%"></i>
@@ -159,27 +161,105 @@
 inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
             </h5>
             <form>
-            <div class="container-fluid">
+            <div class="container-fluid custom-form">
                 <div class="row">
                     <div class="col-sm">
-                    <div class="custom-form-control">
+                        <div class="dropdown">
+                            <button class="custom-form-control dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="custom fa fa-bars"></i>
+                              LAUNCH LOCATION
+                              <i class="arrow fa fa-arrow-down"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="dropdown">
+                            <button class="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="custom fa fa-bars"></i>
+                              ORIENTAL INCLINATION
+                              <i class="arrow fa fa-arrow-down"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm">
+                        <button class="custom-form-control-half" type="button">
+                            <i class="custom fa fa-bars"></i>
+                            <input placeholder="PAYLOAD MASS" type="number">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="custom-button">
                         <i class="fa fa-bars"></i>
-                        <select id="launchLocation" aria-placeholder="Launch Location">
-                            <option value="" style="display: none;" selected>
-                                Launch Location</option> 
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                    </div>
-                    </div>
+                        BUILD MY VEHICLE
+                    </button>
                 </div>
             </div>
         </form>
         </div>
         </div>
 
+        <div class="fifth-section">
+            <h1 class="fith-content">
+                Drop us a note. We will revert. 
+                <br>
+                Yes, we actually do.
+            </h1>
+        </div>
+<!--       -------------------------------------------------FOOTER--------------------------------------  -->
+
+        <div class="footer">
+            <div class="first-row"></div>
+            <div class="container-fluid">
+            <div class="row border-row">
+                <div class="col-sm">
+                    <p>Phone</p>
+                    <p>+32 50 31 28 32</p>
+                </div>
+                <div class="col-sm">
+                    <p>Address</p>
+                    <p>491 Merlin Crest Suite 963</p>
+                </div>
+                <div class="col-sm">
+
+                </div>
+                <div class="col-sm">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p>Services</p>
+                    <p>Development</p>
+                </div>
+                <div class="col-sm">
+                    <p>Help and Advice</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="col-sm border-column">
+                    <p>Company</p>
+                    <p>Jobs</p>
+                </div>
+                <div class="col-sm">
+                    <p>Get in Touch</p>
+                    <p>info.agnikul@gmail.com</p>
+                </div>
+            </div>
+            </div>
+        </div>
     </body>
 </html>

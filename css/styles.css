@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden !important;
+}
+
+.navBar {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.topnav {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+
+.col{
+  text-align: center;
+}
+  
+.navlinks {
+    margin-left: 5%;
+    display: inline;
+}
+
+.nav-brandc img {
+  margin-top: -2%;
+  width: 100%;
+}
+
+  .nav-linkc {
+    padding: 4% 5%;
+    margin-left: 3%;
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
+  .nav-buttonc {
+      padding: 4% 5%;
+      margin-left: -2%;
+      margin-top: -2%;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      background-color: green;
+      border-radius: 15px;
+      border: none;
+  }
+
+  
+  .nav-linkc:hover {
+    color: green;
+  }
+  
+  .topnav a.activec {
+    color: black;
+  }
+  
+
+  .topnav .iconc {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .topnav {
+      margin-top: 4%;
+      margin-bottom: 4%;
+    }
+    .nav-itemc{display: none;}
+    .topnav .iconc {
+      float: right;
+      display: block;
+    }
+
+    .topnav .nav-brandc img {
+      width: 100;
+    }
+  }
+  
+.custom-form-control {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 5px solid grey;
+  border-radius: 5px; 
+}
+
+.custom-form-control i {
+  width: 10%;
+  padding: 2%;
+}
+
+.custom-form-control select,input {
+  text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
+  color: grey;
+  background: none;
+  width: 90%;
+  float: right;
+  text-align: left;
+}
+
+.custom-form-control option {
+  box-shadow: 0 0 10px 100px #fff inset;
+}
+
+.custom-form-control select:active,select:hover {
+  outline: none;
+}
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .iconc {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive .nav-brandc {
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .topnav.responsive .nav-linkc{
+      display: block;
+      padding: 2%;
+      text-align: left;
+    }
+
+    .topnav.responsive .nav-buttonc{
+      margin-top: 2%;
+      padding: 2%;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav.responsive .navlinks {
+        margin-top: 5%;
+        display: block;
+        text-align: left;
+    }
+
+  }
+  

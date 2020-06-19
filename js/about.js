@@ -5,6 +5,7 @@ $(document).ready(function () {
         direction: 'vertical',
         speed: 1000,
         loop: false,
+        simulateTouch: false,
         // If we need pagination
         pagination: {
           el: '.swiper-container__pagination',

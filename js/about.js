@@ -17,7 +17,16 @@ $(document).ready(function () {
             releaseOnEdges: true,
           },
 
-        touchReleaseOnEdges: true
+        on: 
+        {
+           slideChangeTransitionEnd : function() {
+             if(this.isBeginning || this.isEnd)
+             {
+                mySwiper.touchMove.disable();
+             }
+             mySwiper.touchMove.enable();
+           } 
+        }
           
     });
     mySwiper.mousewheel.disable();

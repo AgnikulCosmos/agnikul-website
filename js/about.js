@@ -34,12 +34,12 @@ $(window).scroll(function() {
    if(elementBottom <= viewportBottom && elementTop >= viewportTop)
    {
         mySwiper.mousewheel.enable();
-        mySwiper.allowTouchMove = false;
+        mySwiper.allowTouchMove = true;
    }
     else
     {
          mySwiper.mousewheel.disable();
-         mySwiper.allowTouchMove = true;
+         mySwiper.allowTouchMove = false;
     }
       
 });

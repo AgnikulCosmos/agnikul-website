@@ -1,77 +1,155 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <script src="js/common.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </head>
-    <body>
-<!--       -------------------------------------------------NAVBAR--------------------------------------  -->
-        <div class="container-fluid">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <script src="js/common.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/about.js"></script>
+</head>
+
+<body>
+    <!--       -------------------------------------------------NAVBAR--------------------------------------  -->
+    <div class="container-fluid">
         <div class="row justify-content-center topnav" id="myTopnav">
-       
-        <div class="col-2 nav-brandc">
-                <img  class="logo" src="images/logo.png">
-        </div>
-        <div class="col">
-            <a href="/" class="nav-itemc nav-linkc">
-                About
-            </a>
-        </div>
-        <div class="col">
-            <a href="/" class="nav-itemc nav-linkc">
-                Products
-            </a>
-        </div>
-            <div class="col">
-            <a href="/" class="nav-itemc nav-linkc">
-                Launch Sites
-            </a>
+
+            <div class="col-2 nav-brandc">
+                <img class="logo" src="images/logo.png">
             </div>
             <div class="col">
-            <a href="/" class="nav-itemc nav-linkc">
-                Meet the Team
-            </a>
+                <a href="/" class="nav-itemc nav-linkc">
+                    About
+                </a>
             </div>
             <div class="col">
-            <a href="/" class="nav-itemc nav-linkc">
-                Career
-            </a>
-        </div>
-        <div class="col">
-            <a href="/" class="nav-itemc nav-linkc">
-                Contact Us
-            </a>
+                <a href="/" class="nav-itemc nav-linkc">
+                    Products
+                </a>
             </div>
             <div class="col">
-            <button href="/" class="nav-itemc nav-buttonc">
-                Build your launch
-            </button>
+                <a href="/" class="nav-itemc nav-linkc">
+                    Launch Sites
+                </a>
             </div>
-           <div class="iconc">
-            <a onclick="navBar()">
-              <i class="fa fa-bars"></i>
-            </a>
+            <div class="col">
+                <a href="/" class="nav-itemc nav-linkc">
+                    Meet the Team
+                </a>
+            </div>
+            <div class="col">
+                <a href="/" class="nav-itemc nav-linkc">
+                    Career
+                </a>
+            </div>
+            <div class="col">
+                <a href="/" class="nav-itemc nav-linkc">
+                    Contact Us
+                </a>
+            </div>
+            <div class="col">
+                <button href="/" class="nav-itemc nav-buttonc">
+                    Build your launch
+                </button>
+            </div>
+            <div class="iconc">
+                <a onclick="navBar()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
-          </div>
-          </div>
-<!--       -------------------------------------------------ABOUT SECTION--------------------------------------  -->
+    </div>
+    <!--       -------------------------------------------------ABOUT SECTION--------------------------------------  -->
+    <div class="AboutBanner">
+        <div class="banner-content">
+            <h1>Who <span style="color: green">we</span> are ? </h1>
+            <h5>AgniKul is a derivative of the Sanskrit word "gurukul" and can be interpreted to mean "a place where
+                people learn to use fire</h5>
+        </div>
+    </div>
 
+    <div class="Timeline">
+        <div class="swiper-container">
+            <div class="swiper-container__pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="vertical-line"></div>
+                    <div class="slide-content">
+                        <div class="slide-year">
+                            <p>2010</p>
+                        </div>
+                        <h5>
+                            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
+                            inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
+                            Dept. of Science and Technology (DST), Government of India. A similar centre has also been
+                            established at Indian Institute of Science, Bangalore (IISc).
 
+                            Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
+                            to timeline as we scroll through this page
+                        </h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="vertical-line"></div>
+                    <div class="slide-content">
+                        <div class="slide-year">
+                            <p>2011</p>
+                        </div>
+                        <h5>
+                            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
+                            inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
+                            Dept. of Science and Technology (DST), Government of India. A similar centre has also been
+                            established at Indian Institute of Science, Bangalore (IISc).
 
+                            Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
+                            to timeline as we scroll through this page
+                        </h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="vertical-line"></div>
+                    <div class="slide-content">
+                        <div class="slide-year">
+                            <p>2012</p>
+                        </div>
+                        <h5>
+                            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
+                            inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
+                            Dept. of Science and Technology (DST), Government of India. A similar centre has also been
+                            established at Indian Institute of Science, Bangalore (IISc).
 
+                            Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
+                            to timeline as we scroll through this page
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
 
+            <!-- If we need navigation buttons -->
+        </div>
+    </div>
 
-<!--       -------------------------------------------------FOOTER--------------------------------------  -->
-        <div class="footer">
-            <div class="first-row"></div>
-            <div class="container-fluid">
+    <!-- -------------------------------------------------FOOTER-------------------------------------- -->
+    <div class="footer">
+        <div class="first-row"></div>
+        <div class="container-fluid">
             <div class="row border-row">
                 <div class="col-sm">
                     <p>Phone</p>
@@ -106,7 +184,8 @@
                     <p>info.agnikul@gmail.com</p>
                 </div>
             </div>
-            </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

@@ -142,6 +142,7 @@ body {
   width: 100%;
   padding-top: 10%;
   z-index: -10000000;
+  position: relative;
   padding-left: 5%;
   padding-right: 5%;
 }

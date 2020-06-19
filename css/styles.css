@@ -66,7 +66,7 @@ body {
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
 
     .topnav {
       margin-top: 4%;
@@ -82,6 +82,41 @@ body {
       width: 100;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .iconc {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive .nav-brandc {
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .topnav.responsive .nav-linkc{
+      display: block;
+      padding: 2%;
+      text-align: left;
+    }
+
+    .topnav.responsive .nav-buttonc{
+      margin-top: 2%;
+      padding: 2%;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav.responsive .navlinks {
+        margin-top: 5%;
+        display: block;
+        text-align: left;
+    }
+
+  }
+  
   
 .custom-form-control,.custom-form-control-half {
   border: 1px solid grey;
@@ -141,10 +176,10 @@ body {
   background-color: green;
   width: 100%;
   padding-top: 10%;
-  z-index: -10000000;
   position: relative;
   padding-left: 5%;
   padding-right: 5%;
+  z-index: -100000;
 }
 
 .footer .border-row {
@@ -199,37 +234,4 @@ body {
 
 
 
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .iconc {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .topnav.responsive .nav-brandc {
-        display: block;
-        margin-bottom: 2%;
-    }
-
-    .topnav.responsive .nav-linkc{
-      display: block;
-      padding: 2%;
-      text-align: left;
-    }
-
-    .topnav.responsive .nav-buttonc{
-      margin-top: 2%;
-      padding: 2%;
-      display: block;
-      text-align: left;
-    }
-
-    .topnav.responsive .navlinks {
-        margin-top: 5%;
-        display: block;
-        text-align: left;
-    }
-
-  }
   

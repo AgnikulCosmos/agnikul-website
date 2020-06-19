@@ -1,0 +1,9 @@
+.advisors {
+    display: flex;
+}
+
+
+.swiper-container {
+    width: 100vw;
+    height: 50vh;
+}

@@ -16,9 +16,21 @@ $(document).ready(function () {
             forceToAxis: true,
             releaseOnEdges: true,
           },
+
+        on: 
+        {
+           slideChangeTransitionEnd : function() {
+             if(this.isBeginning || this.isEnd)
+             {
+                mySwiper.touchMove.disable();
+             }
+             mySwiper.touchMove.enable();
+           } 
+        }
           
     });
     mySwiper.mousewheel.disable();
+    mySwiper.touchMove.disable();
 });
 
 $(window).scroll(function() {
@@ -28,8 +40,14 @@ $(window).scroll(function() {
     var viewportTop = $(window).scrollTop();
     var viewportBottom = viewportTop + screen.height;
    if(elementBottom <= viewportBottom && elementTop >= viewportTop)
+   {
         mySwiper.mousewheel.enable();
+        mySwiper.touchMove.enable();
+   }
     else
+    {
          mySwiper.mousewheel.disable();
+         mySwiper.touchMove.disable();
+    }
       
 });

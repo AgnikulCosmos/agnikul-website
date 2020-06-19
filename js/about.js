@@ -22,7 +22,7 @@ $(document).ready(function () {
           
     });
     mySwiper.mousewheel.disable();
-    mySwiper.touchMove.disable();
+    mySwiper.allowTouchMove = false;
 });
 
 $(window).scroll(function() {
@@ -34,12 +34,12 @@ $(window).scroll(function() {
    if(elementBottom <= viewportBottom && elementTop >= viewportTop)
    {
         mySwiper.mousewheel.enable();
-        mySwiper.touchMove.enable();
+        mySwiper.allowTouchMove = false;
    }
     else
     {
          mySwiper.mousewheel.disable();
-         mySwiper.touchMove.disable();
+         mySwiper.allowTouchMove = true;
     }
       
 });

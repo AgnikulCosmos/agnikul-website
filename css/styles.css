@@ -4,8 +4,8 @@
 
 body {
     font-family: "Poppins Regular" !important;
-    overflow-x: hidden !important;
     z-index: 0;
+    width: 100%;
 }
 
 .navBar {
@@ -338,7 +338,7 @@ body {
 
 
 .footer {
-  padding-right: 10%;
+  padding-right: 4%;
 }
 
 .footer .border-row {
@@ -350,7 +350,7 @@ body {
 }
 
 .footer .row {
-  padding: 2%;
+  padding: 2% 0% 2% 2%; 
   font-size: 16px;
   font-stretch: normal;
   font-style: normal;
@@ -376,8 +376,9 @@ body {
 }
 
 .footer-email {
-  font-size : 24px;
+  font-size : 18px;
   font-family : "Poppins Bold";
+  word-wrap: break-word;
 }
 
 .footer-social-logos {
@@ -388,7 +389,7 @@ body {
 .footer-social-logos i {
   border-radius: 50%;
   text-align: center;
-  padding-top: 3%;
+  padding-top: 7px;
   margin: 2%;
   width: 33px;
   height: 33px;

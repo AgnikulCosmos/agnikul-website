@@ -1,0 +1,95 @@
+.TeamBanner {
+    background: url("../images/teampage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+    width: 100%;
+    height: 85%;
+    position:  relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    text-align: center;
+}
+
+.banner-first-line {
+    font-family: "Poppins Bold";
+  font-size: 42px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: center;
+  color: #252526;
+}
+
+.banner-first-line span {
+  color : #4d8c52;
+}
+
+.banner-text {
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(33, 56, 66, 0.6);
+}
+
+@media screen and (max-width : 768px ) {
+  .banner-first-line{
+      font-size: 21px;
+  }
+  
+  .banner-text{
+      font-size: 14px;
+  }
+  
+}
+
+.second-section{
+    margin-top: 3%;
+    padding: 8% !important;
+    width: 80%;
+}
+
+.second-section-heading {
+
+    font-family: "Poppins ExtraBold";
+  font-size: 32px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.34;
+  letter-spacing: normal;
+  color: #4d8c52;
+}
+
+.second-section-text {
+  font-family: "Poppins Regular";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #818383;
+}
+
+@media screen and (max-width : 768 px) {
+    .second-section-heading {
+        font-size : 18px;
+    }
+
+    .second-section-text {
+        font-size: 14px;
+    }
+}

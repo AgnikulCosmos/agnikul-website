@@ -5,7 +5,6 @@
 body {
     font-family: "Poppins Regular" !important;
     z-index: 0;
-    width: 100%;
 }
 
 .navBar {
@@ -22,7 +21,7 @@ body {
 
 .column {
   margin: 0% 1.5%;
-  width: auto;
+  width: 5%;
 }
 
 .column-md {
@@ -44,8 +43,10 @@ body {
     margin-left: 1%;
     text-align: center;
     text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   color: #5b5b5b;
+  transition-delay: 2s; /* delays for 1 second */
+-webkit-transition-delay: 2s; /* for Safari & Chrome */
   }
 
 
@@ -53,11 +54,12 @@ body {
       padding: 3% 5%;
       margin-left: 1%;
       text-align: center;
-      font-size: 14px;
+      font-size: 12px;
       color: white;
       background-color: #4d8c52;
       border-radius: 15px;
       border: none;
+      margin-top: -2%;
       font-family: "Poppins Semibold";
       font-weight: normal;
   font-stretch: normal;
@@ -70,7 +72,7 @@ body {
   
   .nav-linkc:hover {
     color: #4d8c52;
-    font-family: "Poppins Bold";
+    font-family: "Poppins SemiBold";
     text-decoration: none;
   }
   

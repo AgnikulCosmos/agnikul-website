@@ -188,7 +188,6 @@ body {
 .custom-form {
   margin-left : 5%;
   margin-right: 5%;
-  margin-top: 5%;
 }
 
 .custom-form-control i.custom {
@@ -219,6 +218,29 @@ body {
   color: black;
 }
 
+.custom-form-control input::placeholder, .custom-form-control input {
+  text-decoration: none;
+  border: none;
+  font-family: "Poppins Bold";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  width: 90%;
+}
+
+.custom-form-control input {
+  color: #b0b1a8;
+}
+
+.custom-form-control input::placeholder {
+  color: #d2d3d0;
+}
+
+
+
 .custom-form-control-half input::placeholder {
   font-family: "Poppins Bold";
   font-size: 20px;
@@ -248,7 +270,11 @@ body {
   text-align: left;
 }
 
-.custom-form-control:focus,.custom-form-control-half:focus,.custom-form-control-half input:focus {
+
+.custom-form-control:focus,
+.custom-form-control-half:focus,
+.custom-form-control-half input:focus,
+.custom-form-control input:focus {
   outline: none;
 }
 
@@ -305,16 +331,68 @@ body {
   color: #ffffff;
 }
 
+.custom-form-control .form-control-name {
+  padding: 0%;
+  margin: 0%;
+}
+
+.custom-form-options {
+  margin-top: 3% !important;
+  border-radius: 25px;
+  box-shadow: 0 6px 16px 0 rgba(218, 215, 215, 0.5);
+  border: solid 1px #b7b7b7;
+  background-color: #ffffff;
+  overflow-y:  scroll;
+  height: 200px;
+  z-index: 1000000000;
+}
+
+.custom-form-check {
+  margin-top: 1%;
+}
+
+.custom-form-check-group{
+  display: inline-flex;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.custom-form-check-label {
+  font-family: "Poppins Regular";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgba(33, 56, 66, 0.6);
+  margin-left: 3%;
+
+}
+
 
 @media screen and (max-width : 768px) {
   .custom-button span,.custom-form-control-half input,
   .custom-form-control-half input::placeholder,
-  .custom-form-control,.custom-form-control-half{
+  .custom-form-control,.custom-form-control-half,
+  .custom-form-control input,
+  .custom-form-control input::placeholder,
+  .custom-form-check-label
+  {
     font-size : 12px;
   }
 
+  .custom-form-control .form-control-name {
+    margin: 0% 2%;
+  }
+
+  .custom-form-control-half .form-control-name {
+    margin: 0% 0%;
+  }
+
   .custom-form-control-half i.custom {
-    padding: 2% 4%;
+    padding: 2% 3%;
   }
 
   .custom-form-control-half i.arrow {

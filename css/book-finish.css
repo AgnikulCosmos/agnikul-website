@@ -1,0 +1,76 @@
+.middleBanner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.middle-image {
+    margin-bottom: 5%;
+    width: 200px;
+    height: 200px;
+}
+
+.middle-head {
+    font-family: "Poppins Bold";
+    margin-bottom: 2%;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: center;
+  color: #252526;
+}
+
+.middle-button {
+    font-family: "Poppins Bold"; 
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  background-color: #4d8c52;
+  padding: 2% 4%;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 10px 36px 0 rgba(29, 113, 35, 0.2);
+}
+
+.middle-text{
+    font-family: "Poppins Regular";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(33, 56, 66, 0.6);
+}
+
+
+@media screen and (max-width : 768px) {
+    .middle-head {
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+    
+    .middle-text{
+        font-size: 14px;
+    }
+
+    .middle-button{
+        font-size: 14px;
+    }
+
+    .middle-image {
+        margin-bottom: 5%;
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,56 @@
+.heading {
+    margin-top : 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 100%;
+    font-family: "Poppins Bold";
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: center;
+  color: #252526;
+}
+
+
+.form-content{
+    padding: 0% 15%;
+    text-align: center;
+}
+
+.step {
+    margin-left: 2%;
+    font-family: "Poppins Bold";
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 4.11;
+  letter-spacing: 2px;
+  color: #4d8c52;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  text-align: left;
+}
+
+.custom-form-control {
+    margin-bottom: 5%;
+}
+
+.custom-button {
+    margin-bottom : 5%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size:20px;
+    }
+
+    .step {
+        font-size: 13px;
+    }
+}

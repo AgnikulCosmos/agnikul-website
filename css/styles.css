@@ -15,9 +15,24 @@ body {
 .topnav {
     margin-top: 2%;
     margin-bottom: 1%;
+    text-align: center;
+    margin-left: 3%;
+    width : 100%;
   }
 
+.column {
+  margin: 0% 1.5%;
+  width: auto;
+}
 
+.column-md {
+   margin: 0% 1.5%;
+  width: 11%;
+}
+
+.column-lg {
+  width: 15%;
+}
   
 .nav-brandc img {
   padding: 0%;
@@ -69,7 +84,7 @@ body {
     display: none;
   }
   
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1100px) {
 
     .topnav {
       margin-top: 4%;
@@ -89,6 +104,16 @@ body {
       right: 5%;
     }
 
+    .column {
+      width: 100%;
+    }
+    .column-md {
+      width: 100%;
+    }
+
+    .column-lg {
+      width : 100%;
+    }
     
     .topnav .nav-brandc img {
         width: 200;
@@ -96,7 +121,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1100px) {
     .topnav.responsive {position: relative;
       width: 100%;
     }

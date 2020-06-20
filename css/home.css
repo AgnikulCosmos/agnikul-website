@@ -317,6 +317,19 @@
     color: #4d533c;
 }
 
+
+.fifth-section-link {
+    font-family: "Poppins Bold";
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #d4d6d4;
+}
+
+
 .first-row {
     padding-top: 10%;
 }

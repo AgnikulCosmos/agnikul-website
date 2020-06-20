@@ -8,6 +8,7 @@ $(document).ready(function () {
         // If we need pagination
         pagination: {
           el: '.timeline__swiper-pagination',
+          clickable: true,
           renderBullet: function (index, className) {
              return '<span class="' + className + '"> <p class="pagination-text">' + (index + 2010) + '</p></span>';
           }
@@ -30,6 +31,7 @@ $(document).ready(function () {
 
     advSwiper = new Swiper('.advisor-swiper',{
       direction: 'horizontal',
+      autoHeight: true,
       slidesPerView: 'auto',
       centeredSlides: true,
       simulateTouch: false,
@@ -84,6 +86,7 @@ $(document).ready(function () {
     partSwiper = new Swiper('.partner-swiper',{
       direction: 'horizontal',
       slidesPerView: 'auto',
+      autoHeight: true,
       centeredSlides: true,
       simulateTouch: false,
       pagination: {
@@ -142,6 +145,7 @@ $(document).ready(function () {
           loop: true,
           speed: 1000,
           effect: "slide",
+          autoHeight: true,
           pagination: {
             clickable: true,
             el: '.business__swiper-pagination'
@@ -157,7 +161,7 @@ $(window).scroll(function() {
 
     var viewportTop = $(window).scrollTop();
     var viewportBottom = viewportTop + screen.height;
-   if(elementBottom + 0.2*screen.height <= viewportBottom && elementTop - 0.2*screen.height  >= viewportTop)
+   if(elementBottom <= viewportBottom && elementTop >= viewportTop)
    {
         mySwiper.mousewheel.enable();
         mySwiper.allowTouchMove = true;

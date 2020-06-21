@@ -21,18 +21,24 @@ $(document).ready( function() {
           slidesPerView: 'auto',
           pagination: {
             el : ".location__swiper-pagination",
-            clickable : true,
+            clickable : true
           },
           keyboard : true,
           mousewheel : {
             invert : false,
-          }
+            releaseOnEdges: true,
+          },
+          cssMode: true
       }
   );
+
 
   $(".location__slide-content").each(function(){
     $(this).hover(
     function() {
+
+      // Now you can use all slider methods like
+       //$(this).css("border","solid 1px #4d8c52");
         var key = $(this).attr('id');
         //console.log(locationData[key]);
         var dots = document.getElementsByTagName("circle");
@@ -43,6 +49,7 @@ $(document).ready( function() {
         }
     },
     function() {
+     // $(this).css("border","none");
       var key = $(this).attr('id');
       var dots = document.getElementsByTagName("circle");
       for(var i=0;i<dots.length;i++)

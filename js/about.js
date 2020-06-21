@@ -88,6 +88,9 @@ $(document).ready(function () {
       slidesPerView: 'auto',
       autoHeight: true,
       centeredSlides: true,
+      keyboard: {
+        enabled: true,
+      },
       simulateTouch: false,
       pagination: {
         el: '.partner__swiper-pagination',

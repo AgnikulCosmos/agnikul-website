@@ -1,0 +1,22 @@
+.world-map {
+    height: 90vh;
+    width: 90vw;
+    margin-left: 20%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+            align-items: left;
+  }
+  .world-map #world #continents #south-america, .world-map #world #continents #north-america, .world-map #world #continents #africa, .world-map #world #continents #europe, .world-map #world #continents #australia, .world-map #world #continents #russia {
+    pointer-events: bounding-box;
+  }
+  .world-map #world #continents #south-america circle, .world-map #world #continents #north-america circle, .world-map #world #continents #africa circle, .world-map #world #continents #europe circle, .world-map #world #continents #australia circle, .world-map #world #continents #russia circle {
+    fill: rgba(0, 0, 0, 0.3);
+    r: 3;
+  }
+  .world-map #world #continents #south-america:hover *, .world-map #world #continents #north-america:hover *, .world-map #world #continents #africa:hover *, .world-map #world #continents #europe:hover *, .world-map #world #continents #australia:hover *, .world-map #world #continents #russia:hover * {
+    fill: #35ce8d;
+  }
+  

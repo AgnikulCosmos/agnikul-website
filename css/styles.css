@@ -43,10 +43,9 @@ body {
     margin-left: 1%;
     text-align: center;
     text-decoration: none;
+    font-family: "Poppins Semibold";
   font-size: 14px;
   color: #5b5b5b;
-  transition-delay: 2s; /* delays for 1 second */
--webkit-transition-delay: 2s; /* for Safari & Chrome */
   }
 
 
@@ -71,7 +70,7 @@ body {
 
   
   .nav-linkc:hover {
-    color: #4d8c52;
+    color: #4d8c52 !important;
     font-family: "Poppins SemiBold";
     text-decoration: none;
   }

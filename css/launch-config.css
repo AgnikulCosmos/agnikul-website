@@ -1,0 +1,24 @@
+
+.world-map {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .world-map #world #continents #south-america, .world-map #world #continents #north-america, .world-map #world #continents #africa, .world-map #world #continents #europe, .world-map #world #continents #australia, .world-map #world #continents #russia {
+    pointer-events: bounding-box;
+  }
+
+  .world-map #world {
+      transform: scale(2,2) translateY(10%);
+  }
+
+  .world-map #world #continents #south-america circle, .world-map #world #continents #north-america circle, .world-map #world #continents #africa circle, .world-map #world #continents #europe circle, .world-map #world #continents #australia circle, .world-map #world #continents #russia circle {
+    fill: rgba(0, 0, 0, 0.3);
+    r: 3;
+  }
+  

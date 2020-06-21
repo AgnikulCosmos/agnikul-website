@@ -1,13 +1,110 @@
+.overall-div {
+  padding: 5% 5%;
+  display: flex;
+  height: 100%;
+}
+
+.location-swiper {
+  width: 30vw;
+  height: 70vh;
+}
+
+.location-swiper .swiper-wrapper {
+  margin-right: 2%;
+}
+
+.location__swiper-pagination {
+  position: absolute;
+  z-index: 21;
+  width: 11px !important;
+  text-align: center;
+  left: 0px !important;
+  top: 50%;
+  bottom: auto !important;
+  transform: translateY(-50%);
+}
+
+.location__swiper-slide {
+  margin-left: 5%;
+  margin-right: 1%;
+  z-index: 10000;
+  width: 80%;
+  margin-bottom: 2%;
+  height: auto !important;
+  
+}
+
+.location__slide-content {
+  width: 90%;
+  padding: 3%;
+  border-radius: 13px;
+  box-shadow: 0 10px 20px 0 #d4d4d4;
+  border: solid 1px #4d8c52 !important;
+  background-color: #ffffff;
+}
+
+.location__slide-number {
+  font-family: "Poppins Bold";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #252526;
+  margin-bottom: 0% !important;
+}
+
+.location__slide-name {
+  font-family: "Poppins Bold";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4d8c52;
+  margin-bottom: 0% !important;
+}
+
+.location__slide-country {
+  font-family: "Poppins Regular";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.location__slide-desc {
+  display: none;
+  font-family: "Poppins Regular";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(33, 56, 66, 0.6);
+}
+
+.location__slide-content:hover > .location__slide-desc {
+  display: block;
+}
+
+
 .world-map {
-    height: 90vh;
-    width: 90vw;
-    margin-left: 20%;
+    height: 70vh;
+    width: 60vw;
+    transform: translate3d(0,0,-42px);
     display: -webkit-box;
     display: flex;
-    -webkit-box-pack: left;
-            justify-content: left;
-    -webkit-box-align: left;
-            align-items: left;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
   .world-map #world #continents #south-america, .world-map #world #continents #north-america, .world-map #world #continents #africa, .world-map #world #continents #europe, .world-map #world #continents #australia, .world-map #world #continents #russia {
     pointer-events: bounding-box;
@@ -15,8 +112,5 @@
   .world-map #world #continents #south-america circle, .world-map #world #continents #north-america circle, .world-map #world #continents #africa circle, .world-map #world #continents #europe circle, .world-map #world #continents #australia circle, .world-map #world #continents #russia circle {
     fill: rgba(0, 0, 0, 0.3);
     r: 3;
-  }
-  .world-map #world #continents #south-america:hover *, .world-map #world #continents #north-america:hover *, .world-map #world #continents #africa:hover *, .world-map #world #continents #europe:hover *, .world-map #world #continents #australia:hover *, .world-map #world #continents #russia:hover * {
-    fill: #35ce8d;
   }
   

@@ -113,4 +113,21 @@
     fill: rgba(0, 0, 0, 0.3);
     r: 3;
   }
+
+  @media screen and (max-width: 768px) {
+
+    .world-map {
+      display: none;
+    }
+
+    .location-swiper {
+      width: 100vw;
+      height: 80vh;
+    }
+
+    .location__slide-desc {
+      display: block;
+    }
+
+  }
   

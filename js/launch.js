@@ -23,7 +23,6 @@ $(document).ready( function() {
             el : ".location__swiper-pagination",
             clickable : true,
           },
-          freemode: true,
           keyboard : true,
           mousewheel : {
             invert : false,

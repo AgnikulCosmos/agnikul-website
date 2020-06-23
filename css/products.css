@@ -1,0 +1,150 @@
+body {
+    overflow-y: scroll;
+    height: 4000px;
+}
+
+
+.navBar {
+    position: fixed !important;
+    width: 100%;
+}
+
+.originalDiv {
+    width: 100%;
+    overflow-x: hidden;
+    top: 10%;
+    position: fixed;
+    height: 100vh;
+    overflow-y:  hidden;
+}
+
+.originalDiv div {
+    position: relative !important;
+}
+
+.first-scroll-content {
+    padding: 5.23% 21.67% 2.61%;
+    left: 50%;
+    transform:  translateX(-50%);
+    text-align: center;
+}
+
+.first-scroll-heading {
+    font-family: "Poppins SemiBold";
+  font-size: 28px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 12px;
+  text-align: center;
+  color: #5b5b5b;
+}
+
+.first-scroll-text {
+    font-family: "Poppins Regular";
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(33, 56, 66, 0.6);
+}
+
+.rocket-horizontal {
+    top: 50%;
+    left: 50%;
+    display: inline-flex;
+    transform: translateX(-50%);
+    transform-origin: 98% 50%;
+    margin-bottom: 2%;
+    width: 75.76%;
+}
+
+
+.rocket-1 {
+    width: 15.76%;
+    margin-right: -1%;
+}
+.rocket-2 {
+    width: 22.55%;
+}
+.rocket-3 {
+    width: 64.4%;
+}
+
+
+
+.rocket-2 {
+    margin-right: -1.7%; 
+}
+
+.first-scroll-specs {
+    width: 75.76%;
+    margin: 0% 10%;
+}
+
+.first-scroll-specs i {
+    color: #4d8c52;
+}
+
+.spec-name {
+    font-family: "Poppins Medium";
+    margin-top: 1%;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.82px;
+  color: #7d8b91;
+}
+
+
+.spec-value {
+    font-family: "Poppins Light";
+    margin-top: 3%;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  color: #000000;
+
+}
+
+
+@media screen and (max-width : 768px) {
+
+    .rocket-horizontal {
+        width: auto;
+    }
+
+    .first-scroll-heading {
+        font-size: 16px;
+    }
+
+    .first-scroll-text {
+        font-size: 14px;
+    }
+
+    .first-scroll-content {
+        padding: 2.61% 10.82%;
+    }
+
+    .first-scroll-specs {
+        width: 83.3%;
+        margin: 5% 0%;
+    }
+    .spec-name {
+        font-size : 14px;
+    }
+
+    .spec-value {
+        font-size: 16px;
+    }
+}
+

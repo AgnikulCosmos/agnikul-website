@@ -40,8 +40,8 @@ var transitions = [
         ],
         after: [
             ["transform", [
-                ["translate", -46, -40],
-                ["scale", 1.9, 1.75]
+                ["translate", -50,0],
+                ["scale", 1.9, 1.65]
             ]
             ]
         ],
@@ -49,11 +49,11 @@ var transitions = [
             ["transform", [
                 ["translate", {
                     start: -50,
-                    end: -46
+                    end: -50
                 },
                     {
                         start: 0,
-                        end: -40
+                        end: 0
                     }
                 ],
                 ["scale", {
@@ -62,7 +62,7 @@ var transitions = [
                 },
                     {
                         start: 1,
-                        end: 1.75
+                        end: 1.65
                     }]
             ]
             ]
@@ -70,99 +70,73 @@ var transitions = [
         percentStart: 0.015,
         percentEnd: 0.165,
         percentBefore: -1,
+        percentAfter:  0.59,
+    },
+    {
+        selector: ".rocket-horizontal",
+        percentStart: 0.015,
+        percentEnd: 0.165,
+        percentBefore: -1,
         percentAfter:  0.21,
+
+        before: [
+            ["left",50],
+            ["top",40]
+        ],
+        after: [
+            ["left",135],
+            ["top",40]
+        ],
+        on: [
+            ["left",{start: 50, end: 135}],
+            ["top",{start: 40, end: 40}]   
+        ]
     },
     {
         selector: ".rocket-horizontal",
-        before: [
-            ["transform", [
-                ["translate", -46, -40],
-                ["scale", 1.9, 1.75]
-            ]
-            ]
-        ],
-        after: [
-            ["transform", [
-                ["translate", 10, -40],
-                ["scale", 1.9, 1.75]
-            ]
-            ]
-        ],
-        on: [
-            ["transform", [
-                ["translate", {
-                    start: -46.5,
-                    end: 10
-                },
-                    {
-                        start: -40,
-                        end: -40
-                    }
-                ],
-                ["scale", {
-                    start: 1.9,
-                    end: 1.9
-                },
-                    {
-                        start: 1.75,
-                        end: 1.75
-                    }]
-            ]
-            ]
-        ],
         percentStart: 0.21,
+        percentEnd: 0.36,
         percentBefore: 0.165,
-        percentAfter: 0.405,
-        percentEnd: 0.36
-    },
-    {
-        selector: ".rocket-horizontal",
+        percentAfter:  0.405,
+
         before: [
-            ["transform", [
-                ["translate", 10, -40],
-                ["scale", 1.9, 1.75]
-            ]
-            ]
+            ["left",135],
+            ["top",40]
         ],
         after: [
-            ["transform", [
-                ["translate", 60, -40],
-                ["scale", 1.9,1.75]
-            ]
-            ]
+            ["left",95],
+            ["top",40]
         ],
         on: [
-            ["transform", [
-                ["translate", {
-                    start: 10,
-                    end: 60
-                },
-                    {
-                        start: -40,
-                        end: -40
-                    }
-                ],
-                ["scale", {
-                    start: 1.9,
-                    end: 1.9
-                },
-                    {
-                        start: 1.75,
-                        end: 1.75
-                    }]
-            ]
-            ]
-        ],
+            ["left",{start: 135, end: 95}],
+            ["top",{start: 40, end: 40}]   
+        ]
+    },
+    {
+        selector: ".rocket-horizontal",
         percentStart: 0.405,
+        percentEnd: 0.555,
         percentBefore: 0.36,
-        percentAfter: 0.59,
-        percentEnd: 0.555
+        percentAfter:  0.59,
+
+        before: [
+            ["left",95],
+            ["top",40]
+        ],
+        after: [
+            ["left",52],
+            ["top",40]
+        ],
+        on: [
+            ["left",{start: 95, end: 52}],
+            ["top",{start: 40, end: 40}]   
+        ]
     },
     {
         selector: ".rocket-horizontal",
         before: [
             ["transform", [
-                ["translate", 60, -40],
+                ["translate", -50,0],
                 ["scale", 1.9, 1.75]
             ]
             ]
@@ -170,21 +144,21 @@ var transitions = [
         on: [
             ["transform",[
                 ["translate",{
-                    start: 60,
-                    end: -45
+                    start: -50,
+                    end: -50
                 },
                 {
-                    start: -40,
-                    end: 180
+                    start: 0,
+                    end: 0
                 }
             ],
             ["scale",{
                 start: 1.9,
-                end: 0.5
+                end: 0.45
             },
             {
                 start: 1.75,
-                end: 0.5
+                end: 0.45
             }
         ]
             ]
@@ -192,43 +166,83 @@ var transitions = [
         ],
         after: [
             ["transform",[
-                ["translate",-45,180],
-                ["scale",0.5,0.5]
+                ["translate",-50,0],
+                ["scale",0.45,0.45]
             ]
         ]
         ],
         percentStart: 0.59,
         percentBefore: 0.555,
-        percentAfter: 0.785,
+        percentAfter: 0.835,
         percentEnd: 0.74
+    },
+    {
+        selector: ".rocket-horizontal",
+        percentStart: 0.59,
+        percentBefore: 0.555,
+        percentAfter: 0.74,
+        percentEnd: 0.74,
+
+        before: [
+            ["left",52],
+            ["top",40]
+        ],
+        after: [
+            ["left",55],
+            ["top",50]
+        ],
+        on: [
+            ["left",{start: 95, end: 55}],
+            ["top",{start: 40, end: 50}]   
+        ]
+    },
+    {
+        selector: ".rocket-horizontal",
+        percentStart: 0.74,
+        percentBefore: 0.74,
+        percentAfter: 1.1,
+        percentEnd: 0.79,
+
+        before: [
+            ["left",55],
+            ["top",50]
+        ],
+        after: [
+            ["left",55],
+            ["top",65]
+        ],
+        on: [
+            ["left",{start: 55, end: 55}],
+            ["top",{start: 50, end: 65}]   
+        ]
     },
     {
         selector: ".rocket-horizontal",
         before:  [
             ["transform",[
-                ["translate",-45,180],
-                ["scale",0.5,0.5]
+                ["translate",-50,0],
+                ["scale",0.45,0.45]
             ],
         ]
         ],
         on: [
             ["transform",[
                 ["translate",{
-                    start: -45,
-                    end: -45
+                    start: -50,
+                    end: -50
                 },
                 {
-                    start: 180,
-                    end: 180
+                    start: 0,
+                    end: 0
                 }
             ],
             ["scale",{
-                start: 0.5,
-                end: 0.5
+                start: 0.45,
+                end: 0.45
             },
             {
-                start: 0.5,
-                end: 0.5
+                start: 0.45,
+                end: 0.45
             },
         ],
             ["rotate",{
@@ -241,16 +255,16 @@ var transitions = [
         ],
         after: [
             ["transform",[
-                ["translate",-45,180],
-                ["scale",0.5,0.5],
+                ["translate",-50,0],
+                ["scale",0.45,0.45],
                 ["rotate",90]
             ]
         ]
         ],
-        percentStart: 0.785,
-        percentBefore: 0.74,
+        percentStart: 0.835,
+        percentBefore: 0.79,
         percentAfter: 1.1,
-        percentEnd: 0.935
+        percentEnd: 0.985
     },
     {
         selector: ".rocket-3",
@@ -377,6 +391,45 @@ var transitions = [
         percentEnd: 0.555,
         percentBefore: 0.36,
         percentAfter: 1.1,
+    },
+    {
+        selector: '.truck',
+        before: [
+            ["opacity",0],
+        ],
+        on: [
+            ["opacity",{
+                start: 0,
+                end: 1
+            }]
+        ],
+        after: [
+            ["opacity",1]
+        ],
+        percentStart: 0.405,
+        percentEnd: 0.555,
+        percentBefore: -1,
+        percentAfter: 1.1
+    },
+    {
+        selector: ".truck",
+        percentStart: 0.59,
+        percentBefore: -1,
+        percentAfter: 1.1,
+        percentEnd: 0.77,
+
+        before: [
+            ["left",100],
+            ["top",67]
+        ],
+        after: [
+            ["left",52],
+            ["top",67]
+        ],
+        on: [
+            ["left",{start: 100, end: 52}],
+            ["top",{start: 67, end: 67}]   
+        ]
     }
 
 ]
@@ -458,7 +511,9 @@ function loop() {
                 effect = transition.before[effect];
                 if (effect[0] == "transform")
                     $(transition.selector).css(effect[0], constructTransform(effect[1]));
-                else
+                else if(effect[0] == "left" || effect[0] == "top")
+                $(transition.selector).css(effect[0], effect[1] + "%")
+                else 
                     $(transition.selector).css(effect[0], effect[1])
             }
         }
@@ -467,6 +522,8 @@ function loop() {
                 effect = transition.after[effect];
                 if (effect[0] == "transform")
                     $(transition.selector).css(effect[0], constructTransform(effect[1]));
+                else if(effect[0] == "left" || effect[0] == "top")
+                    $(transition.selector).css(effect[0], effect[1] + "%")
                 else
                     $(transition.selector).css(effect[0], effect[1])
             }
@@ -481,7 +538,10 @@ function loop() {
                     value = constructTransformInProgress(effect[1], effectScrollPercent);
                 else
                     value = effect[1].start + (effect[1].end - effect[1].start) * effectScrollPercent;
-                $(transition.selector).css(effect[0], value);
+                if(effect[0] == "left" || effect[0] == "top")
+                    $(transition.selector).css(effect[0], value + "%")
+                else
+                    $(transition.selector).css(effect[0], value);
             }
         }
 

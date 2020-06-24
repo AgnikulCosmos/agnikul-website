@@ -18,15 +18,17 @@ body {
     overflow-y:  hidden;
 }
 
-.originalDiv div {
-    position: relative !important;
+.originalDiv > div {
+    position: absolute !important;
 }
 
 .first-scroll-content {
     padding: 5.23% 21.67% 2.61%;
     left: 50%;
+    top: 0%;
     transform:  translateX(-50%);
     text-align: center;
+    width: 100%;
 }
 
 .first-scroll-heading {
@@ -54,7 +56,7 @@ body {
 }
 
 .rocket-horizontal {
-    top: 50%;
+    top: 40%;
     left: 50%;
     display: inline-flex;
     transform: translateX(-50%);
@@ -66,7 +68,6 @@ body {
 
 .rocket-1 {
     width: 15.76%;
-    margin-right: -1%;
 }
 .rocket-2 {
     width: 22.55%;
@@ -82,8 +83,14 @@ body {
 }
 
 .first-scroll-specs {
-    width: 75.76%;
-    margin: 0% 10%;
+    width: 75.7%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.first-scroll-specs div {
+    position: relative;
 }
 
 .first-scroll-specs i {
@@ -114,6 +121,12 @@ body {
   letter-spacing: normal;
   color: #000000;
 
+}
+
+.truck {
+    width: 40%;
+    position: absolute;
+    opacity: 0;
 }
 
 

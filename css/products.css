@@ -130,6 +130,212 @@ body {
 }
 
 
+.second-scroll {
+    opacity: 0;
+}
+
+.second-scroll-1 {
+    top: 18%;
+    left: 7%;
+    width: 15.83%;
+}
+
+
+.number {
+    font-family: "Poppins Black";
+  font-size: 28px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 2px;
+  color: #4d8c52;
+  margin-bottom: 2%;
+}
+
+.content {
+    font-family: "Poppins SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 6px;
+  color: #5b5b5b;
+}
+
+.second-scroll-2 {
+    top: 18%;
+    left: 30%;
+    width: 54%;
+}
+
+
+
+.heading {
+    font-family: "Poppins Medium";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.82px;
+  color: #4d8c52;
+  margin-bottom: 0.5%;
+}
+
+.text {
+    font-family: "Poppins Light";
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: rgba(33, 56, 66, 0.6);
+}
+
+
+
+
+.second-scroll-3 {
+    top: 63%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86%;
+}
+
+.icon {
+    color: #4d8c52;
+}
+
+.second-scroll-3 .col {
+    width: 355px !important; 
+}
+
+
+.third-scroll {
+    opacity: 0;
+}
+
+.third-scroll-1 {
+    top: 18%;
+    left: 7%;
+    width: 15.83%;
+}
+
+.third-scroll-2 {
+    top: 18%;
+    left: 22.5%;
+    width: 44.44%;
+}
+
+.third-scroll-3 {
+    top: 65%;
+    left: 7%;
+}
+
+
+.third-scroll-3 i {
+    margin-bottom: 5%;
+}
+
+.third-scroll-4 {
+    top: 65%;
+    left: 50%;
+    width: 36.74%
+}
+
+.third-image-1 {
+    width: 12.83%;
+    top: 50%;
+    left: 30%;
+}
+
+.third-image-2 {
+    width: 30%;
+    top: 10%;
+    right: 0%;
+}
+
+.fourth-scroll {
+    opacity: 0;
+}
+
+.fourth-scroll-1 {
+    top: 18%;
+    left: 7%;
+    width: 15.83%;
+}
+
+.fourth-scroll-2 {
+    left: 56.46%;
+    top: 18%;
+    width: 32.15%;
+}
+
+.fourth-scroll-3 {
+    left: 15.47%;
+    top: 63%;
+    width: 53.62%;
+}
+
+.fourth-image {
+    width: 175px;
+}
+
+.fourth-image svg {
+    width: 100%;
+}
+
+.fourth-image-1 {
+    top: 40%;
+    left: 45.63%;
+    transform: translate(-50%,-80%);
+    
+}
+
+.fourth-image-2 {
+    top: 50%;
+    left: 70%;
+    transform-origin: 50% 0%;
+    transform: translateY(-10%);
+}
+
+
+
+.fifth-scroll {
+    opacity: 0;
+}
+
+.fifth-scroll-1 {
+    top: 18%;
+    left: 7%;
+    width: 15.83%;
+}
+
+.fifth-scroll-2 {
+    top: 18%;
+    left: 30%;
+    width: 32.7%;
+}
+
+
+.fifth-scroll-3 {
+    top: 35%;
+    left: 7%;
+    width: 22.30%;
+}
+
+.fifth-scroll-3 .roww {
+    width: 100%;
+}
+
+.fifth-scroll-3 .column {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
 @media screen and (max-width : 768px) {
 
     
@@ -156,5 +362,72 @@ body {
     .spec-value {
         font-size: 16px;
     }
+
+    .number {
+        font-size: 16px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .heading,.text {
+        font-size: 13px;
+    }
+
+    
+
+    .second-scroll-1,.second-scroll-2, .fourth-scroll-1,.fourth-scroll-2{
+        top: 15%;
+    }
+
+    .second-scroll-3{
+        top: 53%;
+    }
+
+    .fourth-scroll-3 {
+        top: 57%;
+    }
+
+    .fourth-image {
+        width: 150px;
+    }
+
+    /* .fourth-image-1 {
+        transform: translate(60%,-80%);
+    } */
+
+    .third-image-1 {
+        width: 12.83%;
+    }
+
+}
+
+
+@media screen and (max-width : 425px){
+    .fifth-scroll-2,.second-scroll-2 {
+        word-wrap: break-word;
+        width: 40%;
+        left: 40%;
+        
+    }
+
+    .third-scroll-2 {
+        left: 30%;
+        width: 50%;
+    }
+
+    .number {
+        font-size: 15px;
+    }
+
+    .content {
+        font-size: 13px;
+    }
+
+    .heading,.text {
+        font-size: 11px;
+    }
+
 }
 

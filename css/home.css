@@ -1,5 +1,5 @@
 .HomeBanner {
-    background: url("../images/homepage.jpeg");
+    background: url("../images/group-14.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 5%;
@@ -100,6 +100,12 @@
     height: 38px;
 }
 
+.third-section-icon {
+    color: #4d8c52;
+    width: 38px;
+    height: 38px;
+}
+
 .second-section-heading {
     font-family: "Poppins Bold";
   font-size: 36px;
@@ -156,6 +162,18 @@
         max-height: 60%;
     }
 
+    .second-section-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .third-section-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
 }
 
 .third-content {
@@ -182,7 +200,20 @@
     -webkit-backdrop-filter: blur(8.9px);
     backdrop-filter: blur(8.9px);
     box-shadow: 11px 11px 35px 0 #eaffec;
-    background: linear-gradient( rgba(75,136,80,0.5),rgba(75,136,80,0.5)), url("../images/homepage.jpeg");
+    background: linear-gradient( rgba(75,136,80,0.7),rgba(75,136,80,0.7));
+}
+
+.back-icon {
+    opacity: 1;
+    position: absolute;
+    left: 70%;
+    width: 50%;
+    top: -10%;
+}
+
+
+.card:hover .back-icon {
+    opacity: 1.0;
 }
 
 .card-head {

@@ -5,6 +5,7 @@
 body {
     font-family: "Poppins Regular" !important;
     z-index: 0;
+    overflow-x: hidden;
 }
 
 .navBar {
@@ -69,7 +70,7 @@ body {
   }
 
   
-  .nav-linkc:hover {
+  .nav-linkc:hover , .nav-linkc.active {
     color: #4d8c52 !important;
     font-family: "Poppins SemiBold";
     text-decoration: none;
@@ -189,9 +190,9 @@ body {
   margin-right: 5%;
 }
 
-.custom-form-control i.custom {
-  width: 5%;
-  padding: 2%;
+.custom-form-control img.custom {
+  width: 20px;
+  margin: 2% 2%;
 }
 
 .custom-form-control i.arrow {
@@ -203,9 +204,9 @@ body {
   color: black;
 }
 
-.custom-form-control-half i.custom {
-  width: 10%;
-  padding: 4%;
+.custom-form-control-half img.custom {
+  width: 20px;
+  margin: 4% 2%;
 }
 
 .custom-form-control-half i.arrow {
@@ -330,6 +331,10 @@ body {
   color: #ffffff;
 }
 
+.custom-button img {
+  width: 25px;
+}
+
 .custom-form-control .form-control-name {
   padding: 0%;
   margin: 0%;
@@ -390,9 +395,18 @@ body {
     margin: 0% 0%;
   }
 
-  .custom-form-control-half i.custom {
-    padding: 2% 3%;
+  .custom-form-control-half img.custom {
+    width: 15px;
   }
+
+  .custom-form-control img.custom {
+    width: 15px;
+  }
+
+  .custom-button img {
+      width: 15px;
+  }
+  
 
   .custom-form-control-half i.arrow {
     padding: 2% 2%;

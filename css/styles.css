@@ -347,9 +347,24 @@ body {
   border: solid 1px #b7b7b7;
   background-color: #ffffff;
   overflow-y:  scroll;
-  height: 200px;
+  max-height: 200px;
+  scrollbar-color: #b7b7b7;
+  scrollbar-width: thin;
+  scrollbar-arrow-color: rgba(225,225,225,0);
   z-index: 1000000000;
 }
+
+.custom-form-options::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: white;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #b7b7b7;
+  border-radius: 20px;
+}
+
 
 .custom-form-check {
   margin-top: 1%;

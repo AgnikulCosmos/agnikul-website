@@ -14,24 +14,6 @@ var locationData = {
 
 $(document).ready( function() {
 
-  locationSwiper = new Swiper(
-      ".location-swiper",
-      {
-          direction: "vertical",
-          slidesPerView: 'auto',
-          pagination: {
-            el : ".location__swiper-pagination",
-            clickable : true
-          },
-          keyboard : true,
-          mousewheel : {
-            invert : false,
-            releaseOnEdges: true,
-          },
-          cssMode: true
-      }
-  );
-
 
   $(".location__slide-content").each(function(){
     $(this).hover(

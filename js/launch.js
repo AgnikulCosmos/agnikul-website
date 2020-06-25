@@ -16,30 +16,39 @@ $(document).ready( function() {
 
 
   $(".location__slide-content").each(function(){
-    $(this).hover(
+    $(this).click(
     function() {
 
       // Now you can use all slider methods like
        //$(this).css("border","solid 1px #4d8c52");
         var key = $(this).attr('id');
+        var selectorDesc = "#" + key + " .location__slide-desc";
+        var selectorContent = "#" + key;
+        if($(selectorContent).hasClass("active"))
+        {
+          $(selectorContent).removeClass("active");
+          $(selectorDesc).removeClass("active");
+        }
+        else
+        {
+            $(selectorContent).addClass("active");
+            $(selectorDesc).addClass("active");
+        }
+
         //console.log(locationData[key]);
         var dots = document.getElementsByTagName("circle");
         for(var i=0;i<dots.length;i++)
         {
              if(locationData[key].indexOf(i) != -1)
+             {
+                //console.log(dots[i].style.fill);
+                if(dots[i].style.fill != "rgb(77, 140, 82)")
                 dots[i].style.fill = "#4d8c52";
+                else
+                dots[i].style.fill = "rgba(0,0,0,0.3)";
+             }
         }
     },
-    function() {
-     // $(this).css("border","none");
-      var key = $(this).attr('id');
-      var dots = document.getElementsByTagName("circle");
-      for(var i=0;i<dots.length;i++)
-      {
-           if(locationData[key].indexOf(i) != -1)
-              dots[i].style.fill ="rgba(0, 0, 0, 0.3)";
-      }
-    }
     );
   });
 

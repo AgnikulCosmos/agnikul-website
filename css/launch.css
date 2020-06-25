@@ -109,11 +109,11 @@
   color: rgba(33, 56, 66, 0.6);
 }
 
-.location__swiper-slide:hover  .location__slide-desc {
+.location__slide-desc.active {
   display: block;
 }
 
-.location__slide-content:hover {
+.location__slide-content.active {
   border: solid 1px #4d8c52;
 }
 
